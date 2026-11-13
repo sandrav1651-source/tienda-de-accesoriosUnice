@@ -1,0 +1,50 @@
+/* =====================================================
+   ESTILOS PERSONALIZADOS - AURELIA ALTA JOYERÍA
+   ===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF8F5;
+    color: #121212;
+}
+
+/* Barra de desplazamiento personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+    background: #dec088;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c58b3b;
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Efecto cristal translúcido en cabecera */
+.glass-header {
+    background: rgba(250, 248, 245, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
